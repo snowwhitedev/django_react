@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+psycopg2 = "<3.0,>=2.7"
+djangorestframework = "*"
+mysqlclient = "*"
+django-mysql = "*"
+Django = ">=2.0,<3.0"
+django-markdownx = "*"
+
+[requires]
+python_version = "3.7"

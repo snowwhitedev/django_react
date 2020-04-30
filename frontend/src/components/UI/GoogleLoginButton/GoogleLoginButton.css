@@ -1,0 +1,28 @@
+.ggbutton {
+    border: none !important;
+    box-shadow: none !important;
+    color: #333 !important;
+    opacity: 1 !important;
+    display: flex;
+    font-weight: bold !important;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.ggbutton img {
+    width: 30px !important;
+    margin-right: 10px !important;
+}
+
+.ggbutton:hover,
+.ggbutton:active {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}

@@ -1,0 +1,82 @@
+.RepetitionAnswer_1 {
+    width: 50% !important;
+    background-color: #FFF !important;
+    padding: 0em 0em .3em 0em !important;
+    margin: auto !important;
+    border-radius: 10px !important;
+    margin-top: 2% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 5px 5px -5px rgb(189, 189, 190);
+}
+.RepetitionAnswer_2 {
+    width: 106% !important;
+    background-color: #FFF !important;
+    padding: 0em 0em 0.3em 0em !important;
+    margin: auto !important;
+    margin-left: -3% !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 5px 5px -5px rgb(189, 189, 190);
+}
+.RepetitionAnswer_3 {
+    width: 106% !important;
+    background-color: #FFF !important;
+    padding: 2em 0em 1em 0em !important;
+    margin: auto !important;
+    margin-left: -3% !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 5px 5px -5px rgb(189, 189, 190);
+    min-height: 30%;
+}
+
+.RepetitionBtnGroup {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.RepetitionBtnGroup button {
+    width: 28% !important;
+    margin: 1% !important;
+}
+
+@media screen and (min-width: 1330px) {
+    .RepetitionAnswer_1 {
+        width: 40% !important;
+    }
+}
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+    .RepetitionAnswer_1 {
+        width: 84% !important;
+    }
+
+    .RepetitionBtnGroup button {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .RepetitionBtnGroup {
+        flex-direction: column !important;
+    }
+    .RepetitionBtnGroup button {
+        font-size: 16px !important;
+        width: 90% !important;
+        margin: auto !important;
+        padding-top: 3% !important;
+        padding-bottom: 3% !important;
+        margin-bottom: 2% !important;
+    }
+    .RepetitionAnswer_1 {
+        width: 88% !important;
+    }
+    .RepetitionAnswer_3 {
+        border-radius: 0px !important;
+    }
+}

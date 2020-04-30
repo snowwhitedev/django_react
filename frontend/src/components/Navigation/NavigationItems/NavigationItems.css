@@ -1,0 +1,22 @@
+.NavigationItems{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-flow: row;
+    /* align-items: center; */
+    height: 100%;
+}
+
+@media (min-width: 500px){
+    .NavigationItems{
+        flex-flow: row;
+    }    
+}
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+
+}

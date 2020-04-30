@@ -1,0 +1,50 @@
+.RepetitionEmpty {
+    width: 40% !important;
+    background-color: #FFF !important;
+    padding: 2.5em 0em 1em 0em !important;
+    margin: auto !important;
+    border-radius: 10px !important;
+    margin-top: 2% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 30%;
+}
+
+.RepetitionEmpty img {
+    max-width: 102px !important;
+    max-height: 110px !important;
+}
+
+.RepetitionsParagraph {
+    width: 60% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto !important;
+    margin-bottom: 4% !important;
+}
+
+.RepetitionsParagraph div {
+    max-width: 320px !important;
+    max-height: 48px !important;
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+    .RepetitionEmpty {
+        width: 96% !important;
+    }
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .RepetitionEmpty {
+        width: 100% !important;
+        border-radius: 0px !important;
+    }
+
+    .RepetitionsParagraph {
+        width: 96% !important;
+    }
+}

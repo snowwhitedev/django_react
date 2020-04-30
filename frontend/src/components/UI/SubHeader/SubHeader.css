@@ -1,0 +1,51 @@
+.SubHeader {
+    width: 100% !important;
+    background-color: #FFF;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-top: 2px solid #F7F7F9;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    white-space: normal !important;
+    color: #A5ADBD !important;
+}
+
+.SubHeader span {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    white-space: nowrap;
+}
+
+.SubHeaderItemLeft,
+.SubHeaderItemRight {
+    display: flex;
+    align-items: center;
+    width: auto !important;
+}
+.SubHeaderItemLeft {
+    justify-content: flex-end;
+}
+.SubHeaderItemRight {
+    justify-content: flex-start;
+}
+
+.SubHeaderItemRight button {
+    margin-left: 0em !important;
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .SubHeader {
+        flex-direction: column;
+    }
+    .SubHeaderItemLeft {
+        margin-bottom: 1% !important;
+        margin-top: 2% !important;
+    }
+    .SubHeaderItemRight {
+        margin-bottom: 2% !important;
+        margin-top: 1% !important;
+    }
+}

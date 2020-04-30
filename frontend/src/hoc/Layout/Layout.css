@@ -1,0 +1,10 @@
+.Content{
+    margin-top: 56px;
+    width: 100% !important;
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .Content {
+        margin-top: 50px !important;
+    }
+}

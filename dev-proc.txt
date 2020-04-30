@@ -1,0 +1,12 @@
+docker-compose exec web python manage.py makemigrations 
+docker-compose exec web python manage.py migrate
+
+python manage.py createsuperuser
+
+user: snow
+email: test@example.comp
+password: snow
+in docker cli django-admin shell
+
+********Use Cases*********
+1. When group is changed

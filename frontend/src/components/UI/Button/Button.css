@@ -1,0 +1,93 @@
+.Button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Button:disabled{
+    color: #ccc;
+    cursor:not-allowed;
+}
+
+.Success {
+    color: #5C9210;
+}
+
+.Danger {
+    color: #944317;
+}
+
+.Transparent {
+    color: #333;
+    background-color: #FFF;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.SocialLogin {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+}
+
+.Orange {
+    color: #FF7815 !important;
+    background-color: #FEE7D6 !important;
+    padding: 0.2em 0.5em 0.2em 0.5em !important;
+    margin-left: 1em !important;
+    margin-right: 0em !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+}
+
+.Outline {
+    width: 90% !important;
+    background-color: transparent !important;
+    border: 1px solid #D0D2DC !important;
+    border-radius: 7px !important;
+    padding: 2% 1% !important;
+    margin: auto !important;
+    margin-top: 3% !important;
+    font-size: 18px !important;
+    color: #584BAE !important;
+}
+
+.colorgrey {
+    color: #828CA2 !important;
+}
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.font20 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.font22 {
+    font-size: 22px !important;
+}
+.font24 {
+    font-size: 24px !important;
+}
+
+.marginBottom1 {
+    margin-bottom: 1% !important;
+}

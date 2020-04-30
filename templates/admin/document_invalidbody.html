@@ -1,0 +1,27 @@
+{% extends "admin/base_site.html" %}
+{% load i18n l10n admin_urls %}
+
+
+{% block bodyclass %}
+    {{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} delete-confirmation delete-selected-confirmation
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<form action="" method="get" id="documentForm">{% csrf_token %}
+    <div>
+        <p>Document has some problematic data (colliding ids, broken tags parity, invalid markdown of any other type).</p>
+        <p>Please check again</p>
+        <a href="/admin/backend/document/{{ obj_id }}/change/" class="button cancel-link">Take me back</a>
+    </div>
+</form>
+
+{% endblock %}

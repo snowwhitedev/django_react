@@ -1,0 +1,68 @@
+.RepetitionQuestion_1 {
+    width: 50% !important;
+    background-color: #FFF !important;
+    padding: 0em 0em 0.3em 0em !important;
+    margin: auto !important;
+    border-radius: 10px !important;
+    margin-top: 2% !important;
+    /* padding-bottom: 5px !important; */
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 5px 5px -5px rgb(189, 189, 190);
+}
+
+.RepetitionQuestion_2 {
+    width: 106% !important;
+    background-color: #FFF !important;
+    padding: 0em 0em 0.3em 0em !important;
+    margin: auto !important;
+    margin-left: -3% !important;
+    border-radius: 10px !important;
+    /* margin-top: 2% !important; */
+    /* padding-bottom: 5px !important; */
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 5px 5px -5px rgb(189, 189, 190);
+}
+
+.RepetitionQuestion_3 {
+    width: 106% !important;
+    background-color: #FFF !important;
+    padding: 2em 0em 1em 0em !important;
+    margin: auto !important;
+    margin-left: -3% !important;
+    border-radius: 10px !important;
+    /* margin-top: 2% !important; */
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 5px 5px -5px rgb(189, 189, 190);
+    min-height: 30%;
+
+}
+
+@media screen and (min-width: 1330px) {
+    .RepetitionQuestion_1 {
+        width: 40% !important;
+    }
+}
+
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+    .RepetitionQuestion_1 {
+        width: 84% !important;
+    }
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .RepetitionQuestion_1 {
+        width: 88% !important;
+        /* border-radius: 0px !important; */
+    }
+    .RepetitionQuestion_3 {
+        border-radius: 0px !important;
+    }
+    .RepetitionQuestion_3 button {
+        padding-top: 3% !important;
+        padding-bottom: 3% !important;
+    }
+}

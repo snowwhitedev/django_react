@@ -1,0 +1,25 @@
+1. Install Docker.
+2. In the project root folder run termianl  
+   docker-compose up
+2. Do migations;
+   -  docker-compose exec web python manage.py makemigrations
+   -  docker-compose exec web python manage.py migrate
+3. Create super user
+   - docker-compose exec web python manage.py creatsuperuser
+
+  After creating super user, go to django-admin/user and register superuser's email and gavatar url.
+4. Register Email patterns.
+   - Go to django admin and register Email patterns like @gmail.com
+5. Save necessary documents, policy items and questions.
+  Set document groups
+  Please make sure policy items has its own questions
+6. start front end
+   - Register APP_SECRET_KEY  in project folder .env file (this is backend key) and 
+     in frontend/src/Constants.js register APP_SECRET_KEY.
+	 These two keys should be matched.
+
+7. Checking send email
+   backend/tests.py
+   
+   command: python manage.py test 
+	 

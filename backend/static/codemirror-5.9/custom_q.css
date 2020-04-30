@@ -1,0 +1,53 @@
+#previewquestion h1, #previewquestion h2, #previewquestion h3, #previewquestion h4, #previewquestion h5{
+    font-weight: 700;
+    color: black !important;
+    padding: 0 !important;
+}
+#previewquestion h1{
+    font-size: 2rem ;
+}
+#previewquestion h2{
+    background: none;
+    font-size: 1.72rem ;
+}
+
+#previewquestion h3{
+    font-size: 1.28rem;
+}
+#previewquestion h4{
+    font-size: 1.07rem ;
+}
+#previewquestion h5{
+    font-size: 1rem;
+    text-transform: none ;
+}
+#previewquestion h6{
+    font-size: 0.8rem ;
+}
+
+#previewanswer h1, #previewanswer h2, #previewanswer h3, #previewanswer h4, #previewanswer h5{
+    font-weight: 700;
+    color: black !important;
+    padding: 0 !important;
+}
+#previewanswer h1{
+    font-size: 2rem ;
+}
+#previewanswer h2{
+    background: none;
+    font-size: 1.72rem ;
+}
+
+#previewanswer h3{
+    font-size: 1.28rem;
+}
+#previewanswer h4{
+    font-size: 1.07rem ;
+}
+#previewanswer h5{
+    font-size: 1rem;
+    text-transform: none ;
+}
+#previewanswer h6{
+    font-size: 0.8rem ;
+}

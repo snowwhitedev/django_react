@@ -1,0 +1,26 @@
+#previewbody h1, #previewbody h2, #previewbody h3, #previewbody h4, #previewbody h5{
+    font-weight: 700;
+    color: black !important;
+    padding: 0 !important;
+}
+#previewbody h1{
+    font-size: 2rem ;
+}
+#previewbody h2{
+    background: none;
+    font-size: 1.72rem ;
+}
+
+#previewbody h3{
+    font-size: 1.28rem;
+}
+#previewbody h4{
+    font-size: 1.07rem ;
+}
+#previewbody h5{
+    font-size: 1rem;
+    text-transform: none ;
+}
+#previewbody h6{
+    font-size: 0.8rem ;
+}

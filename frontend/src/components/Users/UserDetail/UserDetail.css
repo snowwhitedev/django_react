@@ -1,0 +1,169 @@
+.UserDetail {
+    width: 50% !important;
+    background-color: #FFF !important;
+    padding: 1em 0em 1em 0em !important;
+    margin: auto !important;
+    margin-top: 2% !important;
+    border-radius: 10px !important;
+    min-height: 90%;
+}
+.listitem {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+}
+
+.itemdiv {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 4% !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.itemdiv span:nth-child(2) {
+    color: #717D95 !important;
+    font-weight: 400 !important;
+    white-space: nowrap !important;
+}
+
+.checkedItem {
+    color: #717D95 !important;
+}
+
+.userDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 2% 2% 4% !important;
+    border-bottom: 1px solid #DDD;
+}
+
+.userDetailInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.userDetailInfo .userName {
+    font-size: 22px !important;
+    margin-bottom: 5% !important;
+}
+
+.userDetailInfo .userName~span {
+    font-size: 18px !important;
+}
+
+.userDetail .avataImage {
+    width: 8% !important;
+    border-radius: 50% !important;
+}
+
+.fontGrey {
+    color: #717D95 !important;
+}
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.font20 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.font22 {
+    font-size: 22px !important;
+}
+
+.font24 {
+    font-size: 24px !important;
+}
+
+.fontWeight300 {
+    font-weight: 300 !important;
+}
+
+.fontWeight400 {
+    font-weight: 400 !important;
+}
+
+.fontWeight500 {
+    font-weight: 500 !important;
+}
+
+.fontWeight600 {
+    font-weight: 600 !important;
+}
+
+.fontWeight900 {
+    font-weight: 900 !important;
+}
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+    .UserDetail {
+        width: 96% !important;
+    }
+    .itemdiv span:nth-child(2) {
+        white-space: nowrap !important;
+    }
+
+    .listitem {
+        align-items: flex-start !important;
+    }
+
+    .itemdiv {
+        align-items: flex-start !important;
+    }
+    .itemdiv span button {
+        margin-left: 0.5em !important;
+    }
+    .itemdiv span:nth-child(2) {
+        white-space: nowrap !important;
+        margin-left: 2% !important;
+    }
+
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .PolicyLists {
+        width: 100% !important;
+        border-radius: 0px !important;
+    }
+    .itemdiv {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+    
+    .itemdiv span {
+        margin-bottom: 2% !important;
+    }
+
+    .itemdiv span:nth-child(2) {
+        white-space: nowrap !important;
+        margin-left: 0% !important;
+
+    }
+
+    .itemdiv span button {
+        margin-left: 0.2em !important;
+    }
+
+    .listitem {
+        align-items: flex-start !important;
+    }
+    .userDetail .avataImage {
+        width: 10% !important;
+    }
+    
+}

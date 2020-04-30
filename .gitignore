@@ -1,0 +1,19 @@
+/frontend/node_modules
+
+db.sqlite3
+run.bat
+
+# Editor directories and files
+.vscode
+db1.sqlite3
+
+__pycache__/
+*.pyc
+.env
+Dockerfile
+docker-compose.yml
+cronjob.sh
+/mindojopolicy/settings.py
+/mindojopolicy/local_settings.py
+/frontend/src/Constants.js
+/frontend/static

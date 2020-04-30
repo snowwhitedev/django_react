@@ -1,0 +1,59 @@
+.TitleContainer {
+    width: 100% !important;
+    padding: 4% 4% 0% 4% !important;
+    display: flex !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    white-space: normal !important;
+    color: #333 !important;
+}
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.font20 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.font22 {
+    font-size: 22px !important;
+}
+
+.font24 {
+    font-size: 24px !important;
+}
+
+
+.fontWeight300 {
+    font-weight: 300 !important;
+}
+
+.fontWeight400 {
+    font-weight: 400 !important;
+}
+
+.fontWeight500 {
+    font-weight: 500 !important;
+}
+
+.fontWeight600 {
+    font-weight: 600 !important;
+}
+
+.fontWeight900 {
+    font-weight: 900 !important;
+}
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+    .TitleContainer {
+        margin-top: 1% !important;
+        margin-bottom: 2% !important;
+    }
+}

@@ -1,0 +1,9 @@
+.SocialLogin {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.8em !important;
+    padding-bottom: 0.8em !important;
+}
+

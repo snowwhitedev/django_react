@@ -1,0 +1,73 @@
+{% extends "admin/base_site.html" %}
+{% load i18n l10n admin_urls %}
+
+
+{% block bodyclass %}
+    {{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} delete-confirmation delete-selected-confirmation
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<form action="" method="get" id="documentForm">{% csrf_token %}
+    <div>
+        {% for item in removedPolItems %}
+            <p> You have removed policy item <strong>"{{ item.policy.itemText|safe}}"</strong> from the document.</p>
+            <p> The following objects will be deleted:</p>
+            <p><strong>Questions</strong></p>
+            <ul>
+                {% for q in item.questions.all %}
+                    <li>Question {{ q.id }}- {{ q.question }}</li>
+                {% endfor %}
+            </ul>
+            <p><strong>Handbook</strong></p>
+            <ul>
+                {% for hb in item.handbook.all %}
+                    <li>HandbookItem {{ hb.id }}</li>
+                {% endfor %}
+            </ul>
+            <p><strong>RepetitionItem</strong></p>
+            <ul>
+                {% for rp in item.repetitionItem.all %}
+                    <li>RepetitionItem {{ rp.id }}</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+        <input type="hidden" name="save" id="save" value="yes" />
+        <input type="hidden" name="back" id="back" value="yes" />
+        <p><strong>Are you sure you want to proceed?</strong></p>
+        <input type="submit" value="Yes, I'm sure" onclick="confirm()" />
+        <a onclick="goback()" class="button cancel-link">No, take me back</a>
+        
+        <div style="display: none;">
+            {{ form }}
+        </div>
+        
+    </div>
+</form>
+
+<script>
+    var form = document.getElementById("documentForm");
+    var saveDocument = document.getElementById("save");
+    var backForm = document.getElementById("back");
+    
+    function goback(){
+        window.history.back();
+    }
+
+    function confirm(){
+        form.method = "POST";
+        saveDocument.value = "yes";
+        backForm.value = "no";
+        form.submit();
+    }
+
+</script>
+{% endblock %}

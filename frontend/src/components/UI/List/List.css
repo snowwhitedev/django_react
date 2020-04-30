@@ -1,0 +1,16 @@
+.lists {
+    list-style: none !important;
+    width: 100% !important;
+    margin: auto !important;
+    padding-inline-start: 0em !important;
+    padding-inline-end: 0em !important;
+}
+
+.lists img {
+    width: 30px !important;
+    height: auto;
+    margin-right: 2% !important;
+    margin-left: 4% !important;
+    cursor: pointer;
+}
+

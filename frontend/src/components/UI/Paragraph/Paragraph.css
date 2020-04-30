@@ -1,0 +1,85 @@
+.Paragraph {
+    width: 100% !important;
+    padding: 1% 4% !important;
+    display: flex !important;
+    font-size: 18px !important;
+    font-style: normal;
+    white-space: normal !important;
+    color: #333 !important;
+}
+
+.Paragraph p img{
+    width: 30px !important;
+    height: auto;
+    margin-right: 2% !important;
+    margin-left: 4% !important;
+    cursor: pointer;
+
+}
+
+.Paragraph p{
+    width: 100% !important;
+}
+.colorgrey {
+    color: #828CA2 !important;
+}
+
+.fontlight {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.font20 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.font22 {
+    font-size: 22px !important;
+}
+
+.font24 {
+    font-size: 24px !important;
+}
+
+.marginBottom1 {
+    margin-bottom: 1% !important;
+}
+
+.marginBottom2 {
+    margin-bottom: 2% !important;
+}
+
+.marginTopBottom1 {
+    margin-bottom: 1% !important;
+    margin-top: 1% !important;
+}
+
+.fontWeight300 {
+    font-weight: 300 !important;
+}
+
+.fontWeight400 {
+    font-weight: 400 !important;
+}
+
+.fontWeight500 {
+    font-weight: 500 !important;
+}
+
+.fontWeight600 {
+    font-weight: 600 !important;
+}
+
+.fontWeight900 {
+    font-weight: 900 !important;
+}

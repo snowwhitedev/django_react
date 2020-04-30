@@ -1,0 +1,172 @@
+.UserLists {
+    width: 60% !important;
+    background-color: #FFF !important;
+    padding: 1em 0em 1em 0em !important;
+    margin: auto !important;
+    margin-top: 2% !important;
+    border-radius: 10px !important;
+    min-height: 90% !important;
+}
+.listitem {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+}
+
+.itemdiv {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4% !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.itemdiv span:nth-child(2) {
+    color: #717D95 !important;
+    font-weight: 400 !important;
+    white-space: nowrap !important;
+}
+
+.checkedItem {
+    color: #717D95 !important;
+}
+
+.unchecked_icon {
+    display: none !important;
+}
+
+.userMain .avataImage {
+    border-radius: 50% !important;
+    width: 4% !important;
+}
+
+.userMain .checked_icon {
+    border-radius: 50% !important;
+    width: 2.5% !important;
+    height: 2.5% !important;
+    margin-top: -1% !important;
+    margin-left: -3.5% !important;
+}
+
+.userMain .userName {
+    margin-right: 5% !important;
+    display: flex;
+    white-space: nowrap;
+}
+
+.userMain .userName~span {
+    display: flex;
+    white-space: nowrap;
+    font-weight: 500 !important;
+}
+.fontGrey {
+    color: #717D95 !important;
+}
+.font16 {
+    font-size: 16px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.font20 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.font22 {
+    font-size: 22px !important;
+}
+
+.font24 {
+    font-size: 24px !important;
+}
+
+.fontWeight300 {
+    font-weight: 300 !important;
+}
+
+.fontWeight400 {
+    font-weight: 400 !important;
+}
+
+.fontWeight500 {
+    font-weight: 500 !important;
+}
+
+.fontWeight600 {
+    font-weight: 600 !important;
+}
+
+.fontWeight900 {
+    font-weight: 900 !important;
+}
+
+.Flex {
+    display: flex !important;
+}
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+    .UserLists {
+        width: 96% !important;
+    }
+    .itemdiv span:nth-child(2) {
+        white-space: nowrap !important;
+    }
+
+    .listitem {
+        align-items: flex-start !important;
+    }
+
+    .itemdiv {
+        align-items: flex-start !important;
+    }
+    .itemdiv span button {
+        margin-left: 0.5em !important;
+    }
+    .itemdiv span:nth-child(2) {
+        white-space: nowrap !important;
+        margin-left: 2% !important;
+    }
+
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .PolicyLists {
+        width: 100% !important;
+        border-radius: 0px !important;
+    }
+    .itemdiv {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+    
+    .itemdiv span {
+        margin-bottom: 2% !important;
+    }
+
+    .itemdiv span:nth-child(2) {
+        white-space: nowrap !important;
+        margin-left: 0% !important;
+
+    }
+
+    .itemdiv span button {
+        margin-left: 0.2em !important;
+    }
+
+    .listitem {
+        align-items: flex-start !important;
+    }
+    .userMain .avataImage {
+        width: 10% !important;
+    }
+    
+}

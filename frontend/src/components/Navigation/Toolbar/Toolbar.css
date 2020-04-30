@@ -1,0 +1,117 @@
+.Toolbar{
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    color: #A5ADBD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.Logo {
+    height: 100%;
+    width: 30%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.Avata {
+    height: 100%;
+    width: 30%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.Logo img,
+.Avata img {
+    height: 100% !important;
+    width: auto !important;
+}
+
+.logoTitle {
+    margin-top: 0 !important;
+    font-size: 18px;
+    font-style: normal;
+    margin-left: 2%;
+    color: #333;
+    font-weight: 600;
+}
+
+.backTitle {
+    margin-top: 0 !important;
+    font-size: 18px;
+    margin-left: 2%;
+    color: #79849C;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.back::before {
+    font-family: "FontAwesome";
+    font-weight: 300;
+    content: "\f060";
+    color: #79849C;
+    margin-right: 5px !important;
+}
+
+
+@media screen and (max-width: 1330px) and (orientation: Portrait) {
+    .logoTitle {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+    }
+    .Logo {
+        height: 100%;
+        width: 30%;
+        white-space: nowrap !important;
+    }
+    
+    .Avata {
+        height: 100%;
+        width: 30%;
+    }
+    .backTitle {
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+    .Toolbar{
+        padding: 0px 10px !important;
+    }    
+    .Logo img,
+    .Avata img {
+        height: 90% !important;
+        width: auto !important;
+    }
+
+}
+
+@media screen and (max-width: 590px) and (orientation: Portrait) {
+    .Toolbar{
+        height: 50px;
+        padding: 0px 10px !important;
+    }    
+    .logoTitle {
+        display: none !important;
+    }
+
+}
